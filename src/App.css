@@ -1,0 +1,290 @@
+/* alex-brush-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Alex Brush';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/alex-brush-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/poppins-v20-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/poppins-v20-latin-700.woff2") format("woff2");
+}
+
+@media (min-width: 768px) {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #d1cfcf;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7d7d7d;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gray-gray-700: #2d3748;
+  --black-amp-white-white: #fff;
+  --gray-gray-400: #a0aec0;
+  --border-radius: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.bottomBarIcon {
+  font-size: 1.5rem !important;
+}
+
+.logoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+/* ==========================
+    ANTD
+=============================*/
+:where(.css-dev-only-do-not-override-byeoj0).ant-table-wrapper .ant-table-tbody > tr > th > .ant-table-wrapper:only-child .ant-table,
+:where(.css-dev-only-do-not-override-byeoj0).ant-table-wrapper .ant-table-tbody > tr > td > .ant-table-wrapper:only-child .ant-table,
+:where(.css-dev-only-do-not-override-byeoj0).ant-table-wrapper .ant-table-tbody > tr > th > .ant-table-expanded-row-fixed > .ant-table-wrapper:only-child .ant-table,
+:where(.css-dev-only-do-not-override-byeoj0).ant-table-wrapper .ant-table-tbody > tr > td > .ant-table-expanded-row-fixed > .ant-table-wrapper:only-child .ant-table {
+  margin-block: 0;
+}
+.ant-table-thead th.ant-table-cell {
+  background: #e6f4ff !important;
+  padding: 10px !important;
+}
+.ant-table-thead th.ant-table-column-has-sorters {
+  padding: 5px !important;
+}
+
+.ant-table-cell {
+  padding: 5px !important;
+  line-height: 16px !important;
+}
+:where(.css-dev-only-do-not-override-byeoj0).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > th
+  > .ant-table-wrapper:only-child
+  .ant-table,
+:where(.css-dev-only-do-not-override-byeoj0).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > td
+  > .ant-table-wrapper:only-child
+  .ant-table,
+:where(.css-dev-only-do-not-override-byeoj0).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > th
+  > .ant-table-expanded-row-fixed
+  > .ant-table-wrapper:only-child
+  .ant-table,
+:where(.css-dev-only-do-not-override-byeoj0).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > td
+  > .ant-table-expanded-row-fixed
+  > .ant-table-wrapper:only-child
+  .ant-table {
+  margin-bottom: 0;
+}
+/* table row colors */
+.mainDataTable_color_new {
+  background: #ff0099;
+}
+.mainDataTable_color_tayyorlanmoqda {
+  background: #07e0a3;
+}
+.mainDataTable_color_tayyorlandi {
+  background: #b3da04;
+}
+.mainDataTable_color_dostavka {
+  background: #4788f7;
+}
+.mainDataTable_color_tugatildi {
+  background: #b454006d;
+}
+.mainDataTable_color_topshirildi {
+  background: #059b3e;
+}
+.tableColorDesc {
+  min-width: 2rem;
+  height: 2rem;
+  border-radius: 32px;
+  padding: 0.3rem 0.5rem;
+  color: white;
+}
+.tableColorDesc.dark {
+  color: #2d3748;
+}
+/* ==========================
+    PRINT
+=============================*/
+.printContainer {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  max-width: 303px;
+  width: 100%;
+  visibility: hidden;
+  transform: translate(-50%, 0);
+  text-align: center;
+  width: 302.36px;
+  background: #fff;
+  padding: 10px;
+}
+.printTable {
+  font-weight: bold;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse !important;
+}
+
+.printTable th,
+.printTable td {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.printCheckTable {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  width: 100%;
+  border-collapse: collapse !important;
+}
+
+.printTable,
+.printTable th {
+  border-collapse: collapse !important;
+  font-size: 10px;
+  text-align: left;
+  background: #fff;
+}
+.printTable.border th,
+.printTable.border td {
+  outline: 1px solid #7c7c7c;
+}
+
+.printTable.borderRow th,
+.printTable.borderRow td {
+  border-top: 1px solid #7c7c7c;
+}
+.printTable th,
+.printTable td {
+  padding: 2px;
+}
+.printItem {
+  display: none;
+}
+.printCheckItem {
+  word-wrap: break-word;
+  width: 36px;
+}
+@media print {
+  .body {
+    visibility: hidden;
+  }
+  .printContainer {
+    padding: 2rem;
+    visibility: visible;
+  }
+  .printItem {
+    display: block;
+  }
+}
+
+/* ==========================
+    CARD
+=============================*/
+:where(.css-dev-only-do-not-override-byeoj0).ant-card .ant-card-body {
+  padding: 10px;
+}
+
+.row-success {
+  color: #000;
+  background: #52c41a;
+}
+.row-red {
+  color: #000;
+  background: red;
+}
+.row-yellow {
+  color: #000;
+  background: rgb(253, 211, 0);
+}
+.row-success:hover,
+.row-red:hover,
+.row-yellow:hover {
+  color: unset;
+}
+
+.main__table {
+  border-collapse: collapse;
+}
+.main__table tr.border,
+.main__table td.border,
+.main__table th.border {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.main__table td,
+.main__table th {
+  padding: 2px 4px;
+}
+
+/* Text not select */
+.notSelect {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+}
+
+
+.ant-modal-mask {
+  backdrop-filter: blur(16px);
+  background-color: rgba(10, 25, 70, 0.18) !important;
+}
+
+/* ==========================
+    LIST  description
+=============================*/
+.example .ant-list-item-meta-description{
+  font-size: 12kpx !important;
+}

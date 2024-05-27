@@ -1,0 +1,42 @@
+.deadlineModal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #17203F;
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+.title span {
+    font-weight: 700;
+    color: #5473FF;
+}
+.title small {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #17203F;
+}
+
+.leftTime {
+    margin: 50px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #5473FF;
+}
+
+.btn{
+    width: 100%;
+}
